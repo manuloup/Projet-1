@@ -1,3 +1,4 @@
+
 /* Barre du haut */
 .site-header {
   background-color: #000;
@@ -217,5 +218,163 @@ nav a:hover {
   }
 }
 
+/* =========================   SECTION CONTACT ========================= */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
 
+#contact {
+    padding: 80px 10%;
+    background: #000;
+    color: #fff;
+}
+
+#contact h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+
+    border: 3px solid #9b00ff;
+    padding: 50px;
+    box-shadow: 0 0 20px rgba(143, 74, 255, 0.4);
+    transition: box-shadow 0.3s ease;
+
+}
+
+.contact-container:hover {
+    box-shadow:
+        0 0 30px rgba(143, 74, 255, 0.7),
+        0 0 60px rgba(143, 74, 255, 0.4);
+}
+
+.contact-text {
+    max-width: 700px;
+}
+
+.contact-text h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.contact-text p {
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.contact-buttons a {
+    text-decoration: none;
+}
+
+.contact-buttons button {
+    width: 220px;
+    padding: 14px 0;
+    margin: 10px 0;
+
+    background-color: #8f00ff;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow:
+        0 0 15px rgba(143, 74, 255, 0.7),
+        0 0 15px rgba(143, 74, 255, 0.7);
+}
+
+.contact-buttons button:hover {
+    background-color: #a020ff;
+    box-shadow: 0 0 20px rgba(143, 0, 255, 0.7);
+    transform: translateY(-2px);
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #0d0d0d;
+    padding: 50px;
+    padding-left: 30px;
+    width: 520px;
+    border: 1px solid #8f00ff;
+    box-shadow: 0 0 20px rgba(143, 0, 255, 0.7);
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    color: white;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    margin: 8px 0 15px;
+    padding: 10px;
+    background: #111;
+    border: 1px solid #8f00ff;
+    color: white;
+}
+
+.modal-content textarea {
+    min-height: 160px;
+    resize: none;
+}
+
+.contact-btn {
+    width: 220px;
+    padding: 14px 0;
+    margin-left: 154px;
+    margin-top: 20px;
+
+    background: #8f00ff;
+    color: #fff;
+    border: none;
+
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+
+    box-shadow:
+        0 0 20px rgba(143, 0, 255, 0.8),
+        0 0 40px rgba(143, 0, 255, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 0 30px rgba(143, 0, 255, 1),
+        0 0 60px rgba(143, 0, 255, 0.6);
+}
 
